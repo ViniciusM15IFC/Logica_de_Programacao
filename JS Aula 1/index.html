@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert('Olá galera')
+        function trocarFrase() {
+            var fraseAtual = document.getElementById('frase');
+            fraseAtual.innerHTML = 'Funcionou, a frase mudou!';
+            fraseAtual.style.color = "red"
+            fraseAtual.style.fontSize = "25px"
+        }
+    </script>
+</head>
+<body>
+    <h1 id="frase" ondblclick ="trocarFrase()">Olá mundo</h1>
+</body>
+</html>
