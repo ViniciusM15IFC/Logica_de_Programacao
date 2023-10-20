@@ -12,8 +12,15 @@ function trocarClasse() {
     var fraseAtual = document.getElementById("frase")
     fraseAtual.className = "h1_2"
 }
-function trocarTexto(umTexto) {
-    alert(umTexto);
+function trocarTexto() {
     var elemento = document.getElementById("frase");
-    elemento.innerHTML = umTexto;
+    var elementoNovo = document.getElementById("novafrase").value;
+    elemento.innerHTML = elementoNovo;
+}
+function somar() {
+    var n1 = document.getElementById("n1");
+    var n2 = document.getElementById("n2");
+    var soma = n1 + n2
+    var elemento = document.getElementById("resultado").value;
+    elemento.innerHTML = soma
 }
