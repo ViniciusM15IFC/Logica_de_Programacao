@@ -1,4 +1,4 @@
-alert('Olá galera')
+
 function trocarFrase() {
     var elemento = document.getElementById("frase");
     elemento.innerHTML = 'Funcionou, a frase mudou!';
@@ -11,4 +11,9 @@ function trocarFrase() {
 function trocarClasse() {
     var fraseAtual = document.getElementById("frase")
     fraseAtual.className = "h1_2"
+}
+function trocarTexto(umTexto) {
+    alert(umTexto);
+    var elemento = document.getElementById("frase");
+    elemento.innerHTML = umTexto;
 }
