@@ -43,3 +43,28 @@ function dividir() {
     var elemento = document.getElementById("resultado");
     elemento.value = quociente
 }
+function validar() {
+    var elemento = document.getElementById("teste").value
+    if (elemento == 'sim') {
+        alert('deu certo')
+    }
+    else {
+        alert('não deu certo')
+    }
+}
+function numeros() {
+    var n1 = prompt('diga um numero')
+    var n1 = parseFloat(n1)
+    var n2 = 5
+    var total = n1 + n2
+    alert('Total = ' + total)
+}
+function login() {
+    var usuario = document.getElementById("usuario")
+    var senha = document.getElementById("senha")
+    if (usuario == nome123) {
+        if (senha == 12345) {
+            alert('certo')
+        }
+    }
+}
