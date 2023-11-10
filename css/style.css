@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
 .h1_1 {
     background-color: crimson;
 }
@@ -15,13 +21,62 @@ div.login input {
     padding: 5px;
     width: 200px;
 }
-input.input-login {
-    
-}
 input#login {
     margin: 3px;
 }
 fieldset {
     color: white;
     border-radius: 10px;
+}
+.input-container {
+    width: 100%;
+    display: inline-flex;
+}
+header {
+    background-color: aqua;
+    width: 100%;
+    padding: 30px;
+}
+header * {
+    background-color: aqua;
+}
+nav {
+    width: 100%;
+    display: inline-block;
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+main {
+    margin: 20px;
+    background-color: white;
+    color: black;
+
+}
+main * {
+    margin: 5px;
+    background-color: white;
+}
+form {
+    padding: 15px;
+}
+.input-container {
+    width: 100%;
+    display: inline-flex;
+}
+.input-container input {
+    width: 100%;
+    padding: 3px;
+}
+button[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+}
+button[type="reset"] {
+    background-color: gray;
+    color: red;
+    padding: 3px;
 }
