@@ -86,7 +86,7 @@ function verificar() {
     if ((senha != '1234') && (senha != '4321')) {
         alert('Senha errada')
         return
-    }
+    } 
     if (idade < 10) {
         alert('Idade errada')
         return
