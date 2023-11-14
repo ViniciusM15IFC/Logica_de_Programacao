@@ -100,3 +100,10 @@ function verificar() {
         return
     }
 }
+function validarEmail() {
+    var email = document.getElementById("idEmail").value
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        alert("Email inválido")
+        return
+    }
+}
