@@ -107,3 +107,23 @@ function validarEmail() {
         return
     }
 }
+function contar() {  
+    var soma = 0
+    for(var n = 0; n < 101; n++) {
+        var soma = soma + n
+    }
+    document.write(soma)
+}
+function contar2() {
+    var n = 0
+    while (n != 25) {
+        n = prompt('diga um número')
+    }
+}
+function listas() {
+    var lista = [1,2,3,4,5,6,7]
+    for ( var cont = 0; cont < lista.length; cont++) {
+        var texto = lista[cont]
+        console.log(texto)
+    }
+}
