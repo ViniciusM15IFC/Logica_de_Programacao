@@ -108,11 +108,21 @@ function validarEmail() {
     }
 }
 function contar() {  
-    var soma = 0
-    for(var n = 0; n < 101; n++) {
-        var soma = soma + n
+    var a = ["Celso Portiolli", "Barack Obama", "Wagner", "Jazzghost", "Joe Biden"]
+    var position = a.indexOf(prompt("Diga um nome"))
+    if (position != -1) {
+        alert("encontrado")
     }
-    document.write(soma)
+    else {
+        alert("não encontrado")
+    }
+    for ( let index = 0; index < a.length; index++) {
+        const nome = a[index]
+        if(nome == "Jazzghost") {
+            alert("casinha " + index + " tem " + nome )
+        }
+    }
+    console.table(a)
 }
 function contar2() {
     var n = 0
@@ -126,4 +136,25 @@ function listas() {
         var texto = lista[cont]
         console.log(texto)
     }
+}
+function numeros() {
+    var array = []
+    var n1 = parseInt(prompt('Diga um número'))
+    for ( let cont = 0; cont <= n1; cont++) {
+        array.push(cont)
+    }
+    console.table(array)
+    var n2 = parseInt(prompt('Diga um número para ser removido'))
+    for ( let index = 0; index < array.length; index++) {
+        const nome = array[index]
+        if(nome == n2) {
+            break
+        }
+    }
+    const index = array.indexOf(n2)
+    if (index == -1) {
+        alert('Não está na lista')
+        return
+    }
+    array.splice(index, 1)
 }
