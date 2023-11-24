@@ -158,3 +158,10 @@ function numeros() {
     }
     array.splice(index, 1)
 }
+function notasCalc() {
+    var notas = []
+    const nota1 = parseFloat(prompt('Digite sua primeira nota'))
+    notas.push(nota1)
+    const nota2 = parseFloat(prompt('Digite sua segunda nota'))
+    notas.push(nota2)
+}
