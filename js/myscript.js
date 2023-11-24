@@ -164,4 +164,49 @@ function notasCalc() {
     notas.push(nota1)
     const nota2 = parseFloat(prompt('Digite sua segunda nota'))
     notas.push(nota2)
+    let soma = parseFloat(0)
+    for ( let index = 0; index < notas.length; index++) {
+        const nota = notas[index]
+        soma += nota
+    }
+    var nota3 = 18 - soma
+    if (nota3 < 0) {
+        var nota3 = 0
+    }
+    console.log(nota3)
+}
+function ListaNumeros() {
+    var lista = []
+    for ( let i = 1; i < 6; i++) {
+        let num = parseInt(prompt('Diga um Número'))
+        lista.push(num)
+    }
+    ListaNumerosPrint(lista)
+    ListaNumerosSoma(lista)
+}
+function ListaNumerosPrint(lista) {
+    for ( let index = 0; index < lista.length; index++) {
+        const num = lista[index]
+        document.write(num + "<br>")
+    }
+}
+function ListaNumerosSoma(lista) {
+    let soma = 0
+    for ( let index = 0; index < lista.length; index++) {
+        const num = lista[index]
+        soma += num
+    }
+    console.log(soma)
+}
+function ListaNumerosPares(lista) {
+
+}
+function ListaNumerosImpares(lista) {
+
+}
+function ListaNumerosSomaPares(lista) {
+
+}
+function ListaNumerosSomaImpares(lista) {
+
 }
